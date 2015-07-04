@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Key Management System </title>
+		<meta charset="utf-8">
+            <link rel="stylesheet" type="text/css" href="Styles.css">
+			<style>
+
+			</style>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+				$(document).ready(function(){$("#div").fadeIn(3000);});
+			</script>
+    </head>
+	<body>
+		<h1 style="padding:1% 20%;">Key Management System</h1>
+				<fieldset style="width:12%;position:absolute; left:70%">
+					<legend style="width:80%;"><h2>User Login</h2></legend>
+						<form>
+							<h3>UserID</h3><input type="text" name="UserID">
+							<h3>PIN</h3><input type="password" name="PIN">
+							<button style="margin-left:35%; margin-top:5%;" onclick="window.location.assign('User_profile.html');">Sign in</button>
+						</form>
+				</fieldset>
+			<div class="adminButton" style="margin:5px 5px 5px 5px;">
+			<button onclick="window.location.assign('Admin_login.php');">Admin login</button>
+			</div>
+        <div class="footer" >
+			<h4>A project of Computer Science and Engineering department,
+			University of Moratuwa.</h4>
+		</div>
+	</body>
+</html>
