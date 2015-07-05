@@ -68,11 +68,8 @@
         <h1 style="padding:1% 20%;">Key Management System</h1>
             <fieldset style="width:12%; position:absolute; left:70%;">
                 <legend style="width:80%;"><h2>User Login</h2></legend>
-                <form>
-                    <h3>UserID</h3><input type="text" name="UserID">
-                    <h3>PIN</h3><input type="password" name="PIN">
-                    <input type="submit" value="Sign in" style="margin-left:35%; margin-top:5%; margin-bottom: 5%;" onclick="window.location.assign('User_profile.html');"></input>
-                </form>
+                <form method="POST" action="userloginlink.php" > User Id <br><input type="text" name="UserId" size="20"><br> Pin <br><input type="Pin" name="Pin" size="20"><br> <input id="button" type="submit" name="submit" value="Log-In"/> </form>
+
             </fieldset>
 		<div class="adminButton" style="position:absolute; top:70%;">
             <button style="margin:10px 10px 10px 10px;" onclick="window.location.assign('Admin_login.php');">Admin login</button>
