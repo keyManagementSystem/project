@@ -2,6 +2,3 @@ You have  apples, and  oranges
 You have 54 apples, and 23 oranges
 You have 54 apples, and 23 oranges
 You have 547 apples, and 237 oranges
-
-
-new description
