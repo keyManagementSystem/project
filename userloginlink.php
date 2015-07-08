@@ -9,8 +9,9 @@ function SignIn() { session_start(); //starting the session for user profile pag
 if(!empty($_POST['UserId'])) //checking the 'user' name which is from Sign-In.html, is it empty or have some text
 { $query = mysql_query("SELECT * FROM userdetail where UserId = '$_POST[UserId]' AND Pin = '$_POST[Pin]'") or die(mysql_error()); $row = mysql_fetch_array($query) or die(mysql_error());
     if(!empty($row['UserId']) AND !empty($row['Pin'])) {
-       // $_SESSION['UserId'] = $row['Pin'];
-   // echo "Login Successfully";
+        echo "<script>";
+        echo"window.location = 'User_profile.php';";
+        echo"</script>";
    echo "<form method='POST' action='User_profile.php'> <input id='button' type='submit' name='submit' value='proceed'/></form>";
     } else { echo "SORRY... YOU ENTERED WRONG ID AND PASSWORD... PLEASE RETRY..."; } } }
 if(isset($_POST['submit'])) { SignIn(); } ?>
